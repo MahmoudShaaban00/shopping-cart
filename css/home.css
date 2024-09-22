@@ -1,0 +1,232 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+    font-size: 18px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    height: 80px;
+    width: 70%;
+    background-color: goldenrod;
+    padding: 15px;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: white;
+    width: 80px;
+    border-radius: 3px;
+}
+
+.fa-solid{
+    color: goldenrod;
+}
+
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background-color: goldenrod;
+    color: white;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+}
+
+h2{
+    font-size: 20px;
+    color: red;
+}
+
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover{
+    background-color: #333;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+
+.row-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid goldenrod;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.rowimg{
+    max-width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+/*response css */
+@media (max-width:835px) {
+    button{
+        width: 100%;
+        padding: 3px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:610px) {
+    .header{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    #root{
+      display: block;
+    }
+    .box{
+        margin-bottom: 20px;
+    }
+    button{
+        width: 100%;
+        padding: 4px 15px;
+        font-size: 18px;
+    }
+
+    .cart-item{
+        display: flex;
+        flex-direction: column;
+    }
+    #total{
+        font-size: 15px;
+        margin-left: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .price{
+        font-size: 15px;   
+    }
+    .header .logo{
+        font-size: 20px;
+    }
+}
